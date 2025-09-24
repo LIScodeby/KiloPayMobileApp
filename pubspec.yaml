@@ -1,0 +1,55 @@
+name: kilopay
+description: "Приложение KiloPay — снижайте вес и зарабатывайте деньги"
+publish_to: 'none' # это приватный проект
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Иконки из Cupertino
+  cupertino_icons: ^1.0.2
+
+  # State management
+  provider: ^6.0.5
+
+  # HTTP-клиент
+  dio: ^5.1.1
+
+  # Локальное хранение настроек и токенов
+  shared_preferences: ^2.0.15
+
+  # Форматирование дат
+  intl: ^0.17.0
+
+  # Графики и диаграммы
+  fl_chart: ^0.68.0
+  table_calendar: ^3.0.8
+  collection: ^1.19.1
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_test:
+    sdk: flutter
+
+  # Интеграционные тесты
+  integration_test:
+    sdk: flutter
+
+  # Линтер и стилистика кода
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/images/
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
